@@ -26,7 +26,15 @@ public function __construct(){
             $this->load->view("mahasiswa/tambah", $data);
             $this->load->view("templates/footer");
         } else{
-            echo "Berhasil!";
+            $this->Mahasiswa_model->tambahDataMahasiswa();
+            $this->session->set_flashdata('flash', 'ditambahkan');
+            redirect('mahasiswa');
         }
+    }
+
+    public function hapus($id){
+        $this->Mahasiswa_model->hapusDataMahasiswa($id);
+        $this->session->set_flashdata('flash', 'dihapus');
+        redirect('mahasiswa');
     }
 }

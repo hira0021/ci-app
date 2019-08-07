@@ -23,4 +23,16 @@ class Mahasiswa_model extends CI_Model{
     public function getMahasiswaById($id){
         return $this->db->get_where('mahasiswa', ['id' => $id])->row_array();
     }
+
+    public function ubahDataMahasiswa(){
+        $data = [
+            "nama" => $this->input->post('nama', true),
+            "nim" => $this->input->post('nim', true),
+            "email" => $this->input->post('email', true),
+            "jurusan" => $this->input->post('jurusan', true)
+        ];
+
+        $this->db->where('id', $this->input->post('id', true));
+        $this->db->update("mahasiswa", $data);
+    }
 }

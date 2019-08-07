@@ -1,0 +1,10 @@
+[33m7c00500[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m #6 flasher & delete
+[33m04b16e8[m #5 Form Validation
+[33mc410eb0[m[33m ([m[1;31morigin/master[m[33m)[m #4.8 Navbar Link & Other link fixed
+[33m8cd159a[m #4.5 Navbar & autoload['helper']
+[33m8882fb7[m #4 Daftar Mahasiswa(Database)
+[33m73fe8c0[m #3 Controllers & Views
+[33m081feef[m #2 Mengubah Default Url
+[33m1292a0f[m #1.5 Config Base Url dan menghilangkan Index.php pada config
+[33m5b7f266[m #1 Menghilangkan index.php di URL
+[33md85b0bd[m #first init
